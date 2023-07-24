@@ -1,0 +1,8 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.home-page {
+  padding-top: 28px;
+  padding-bottom: 150px;
+}/*# sourceMappingURL=Home.css.map */

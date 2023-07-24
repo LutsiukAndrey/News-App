@@ -1,0 +1,77 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.navigation {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-right: 32px;
+  }
+}
+.navigation__link {
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0px;
+  border-radius: 2px;
+  background-color: #4440f6;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: #4440f6;
+}
+@media screen and (min-width: 1280px) {
+  .navigation__link {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation__link:not(:last-child) {
+    margin-right: 44px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navigation__link:not(:last-child) {
+    margin-right: 69px;
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 14px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 32px;
+    margin-right: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo {
+    font-size: 42px;
+    margin-right: 120px;
+  }
+}
+
+.link-active {
+  color: #4440f6;
+  text-decoration: none;
+}
+
+.link-active::after,
+.navigation__link:hover::after {
+  width: 120%;
+}/*# sourceMappingURL=Navigation.css.map */

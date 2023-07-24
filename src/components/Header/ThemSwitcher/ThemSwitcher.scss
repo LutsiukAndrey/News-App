@@ -1,0 +1,13 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.switcher {
+  display: flex;
+  align-items: center;
+  &__icon {
+    &.css-i4bv87-MuiSvgIcon-root {
+      width: 21px;
+      height: 21px;
+    }
+  }
+}

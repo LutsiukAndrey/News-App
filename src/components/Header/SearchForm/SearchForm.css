@@ -1,0 +1,28 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.search-form {
+  position: relative;
+}
+.search-form__input {
+  background-color: transparent;
+  border: 1px #111321 solid;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 40px;
+}
+.search-form__input:focus-visible {
+  outline: none;
+}
+.search-form__button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+}/*# sourceMappingURL=SearchForm.css.map */

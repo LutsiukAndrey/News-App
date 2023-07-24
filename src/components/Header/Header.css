@@ -1,0 +1,18 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #a8a8a8;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}/*# sourceMappingURL=Header.css.map */

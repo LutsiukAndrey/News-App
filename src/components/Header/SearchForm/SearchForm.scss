@@ -1,0 +1,46 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+.search-form {
+  position: relative;
+  @include tablet {
+    // margin-right: 24px;
+  }
+  @include desktop {
+    // margin-right: 147px;
+  }
+
+  &__input {
+    // border: transparent;
+
+    background-color: transparent;
+    border: 1px $colorBlack solid;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 40px;
+    &:focus-visible {
+      outline: none;
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    &-icon {
+    }
+    @include tablet {
+    }
+    @include desktop {
+    }
+  }
+}

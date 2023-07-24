@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $colorGrey;
+  @include tablet {
+    // justify-content: start;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}

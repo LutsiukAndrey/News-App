@@ -1,14 +1,14 @@
-import React, { Suspense } from 'react';
+import '../../main.scss';
+
+import { Suspense } from 'react';
 
 import { Outlet } from 'react-router-dom';
-import Navigation from '../Navigation/Navigation';
-// import Navigation from '../Navigation/Navigation';
+import Header from '../Header/Header';
 
 const Layout = () => {
   return (
-    <div>
-      <Navigation />
-
+    <div className="container">
+      <Header />
       <Suspense fallback={<h1>Loading</h1>}>
         <Outlet />
       </Suspense>

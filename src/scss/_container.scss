@@ -1,10 +1,14 @@
 @import './mixins';
 
 .container {
+  background-color: $pageColor;
+  // background-color: rgb(174, 174, 174);
   position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 360px;
+  padding-left: 16px;
+  padding-right: 16px;
   @include tablet {
     max-width: 810px;
   }
