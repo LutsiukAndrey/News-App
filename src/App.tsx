@@ -1,9 +1,9 @@
 import Layout from './components/Layout/Layout';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
-import NotFound from './pages/NotFound';
 import Favorite from './pages/Favorite';
 import Read from './pages/Read';
+import NotFoundPage from './pages/NotFoundPage';
 
 enum PAGES {
   MAIN = 'main',
@@ -47,9 +47,9 @@ function App(): JSX.Element {
               element={<config.Component />}
             />
           ))}
-        </Route>
 
-        <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </>
   );

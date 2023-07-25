@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+.not-found {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  //   @include desktop {
+  //     padding-top: 100px;
+  //     padding-bottom: 100px;
+  //   }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

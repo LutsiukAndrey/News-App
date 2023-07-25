@@ -1,10 +1,3 @@
-import {
-  FormControl,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  OutlinedInput,
-} from '@mui/material';
 import './SearchForm.scss';
 import SearchIcon from '@mui/icons-material/Search';
 const SearchForm = () => {
@@ -20,21 +13,6 @@ const SearchForm = () => {
           <SearchIcon className="search-form__button-icon" />
         </button>
       </form>
-      {/* <FormControl variant="outlined" className="search-form">
-        <InputLabel htmlFor="outlined-adornment-password">Search</InputLabel>
-        <OutlinedInput
-          id="outlined-adornment-password"
-          type={'text'}
-          endAdornment={
-            <InputAdornment position="end">
-              <IconButton aria-label="toggle password visibility" edge="end">
-                <SearchIcon className="search-form__button-icon" />
-              </IconButton>
-            </InputAdornment>
-          }
-          label="Password"
-        />
-      </FormControl> */}
     </>
   );
 };

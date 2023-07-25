@@ -1,2 +1,14 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 48px;
+  }
+  @include desktop {
+    margin-bottom: 60px;
+  }
+  // .filter__btn-grop
+}

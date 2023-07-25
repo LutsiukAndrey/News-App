@@ -1,0 +1,76 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+.weather-wraper {
+  color: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 130px;
+  width: 100%;
+  background-color: $colorBlue;
+  border-radius: 4px;
+  //   text-align: center;
+
+  @include tablet {
+    width: 353px;
+  }
+  @include desktop {
+    width: 395px;
+  }
+
+  &__icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 165px;
+  }
+}
+
+.weather {
+  &__temperature {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 80px;
+    &-value {
+      font-size: 64px;
+      margin-right: 16px;
+    }
+  }
+
+  &-details {
+    position: relative;
+    &__description {
+      font-size: 36px;
+    }
+
+    &__location {
+      display: flex;
+      padding: 8px;
+      background-color: #fefeff56;
+      border-radius: 10px;
+      //   align-items: center;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $colorWhite;
+      //   border: 1px solid #000;
+      left: -8px;
+      bottom: 0;
+      width: 1px;
+      height: 88%;
+    }
+  }
+}
+
+.date {
+  font-size: 36px;
+  text-align: center;
+  &__day-of-week {
+  }
+
+  &__value {
+  }
+}

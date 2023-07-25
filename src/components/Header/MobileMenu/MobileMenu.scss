@@ -1,0 +1,32 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.mobile-menu {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  background-color: $mainBgColor;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  &__header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 68px;
+  }
+  @include tablet {
+    visibility: hidden;
+  }
+}
+.close-menu {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.them-swithcer-wrapper {
+  padding: 16px 24px;
+}

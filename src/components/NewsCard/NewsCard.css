@@ -1,0 +1,108 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.news-card {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .news-card {
+    width: 353px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .news-card {
+    width: 395px;
+  }
+}
+.news-card__image-wraper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.news-card__image-wraper__text {
+  background-color: rgba(67, 64, 246, 0.3882352941);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 40px;
+}
+.news-card__image-wraper__image {
+  border-radius: 4px;
+}
+.news-card__image-wraper__favorite-button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  padding: 6px 12px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 20px;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.news-card__image-wraper__favorite-button__text {
+  margin-right: 4px;
+}
+.news-card__image-wraper__favorite-button:hover {
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+@media screen and (min-width: 768px) {
+  .news-card__description-wraper {
+    max-width: 351px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .news-card__description-wraper {
+    width: 353px;
+  }
+}
+.news-card__description-wraper__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .news-card__description-wraper__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .news-card__description-wraper__title {
+    margin-bottom: 20px;
+  }
+}
+.news-card__description-wraper__description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .news-card__description-wraper__description {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .news-card__description-wraper__description {
+    margin-bottom: 20px;
+  }
+}
+.news-card__details {
+  display: flex;
+  justify-content: space-between;
+}
+.news-card__date {
+  color: #a8a8a8;
+}
+.news-card__read-more-button {
+  border: none;
+  background-color: transparent;
+  color: #4440f6;
+  font-size: 16px;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Add transition for smooth animation */
+}
+.news-card__read-more-button:hover {
+  transform: scale(1.1); /* Scale the button by 10% on hover */
+}/*# sourceMappingURL=NewsCard.css.map */

@@ -4,4 +4,16 @@
 .home-page {
   padding-top: 28px;
   padding-bottom: 150px;
+  &__wraper {
+    gap: 28px;
+
+    @include tablet {
+      gap: 29px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      gap: 31px;
+    }
+  }
 }

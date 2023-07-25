@@ -1,0 +1,28 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.not-found {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .not-found {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.not-found__title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .not-found__title {
+    font-size: 40px;
+  }
+}
+.not-found__img {
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=NotFound.css.map */

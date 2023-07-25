@@ -1,16 +1,14 @@
 import './Navigation.scss';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ROUTE_CONFIG } from '../../App';
+import { ROUTE_CONFIG } from '../../../App';
 
 const Navigation: React.FC = () => {
   // const isActive = true;
   return (
     <nav className="navigation">
-      <Link to="/" className="logo">
-        News
-      </Link>
       {Object.values(ROUTE_CONFIG).map(config => (
         <NavLink
           className={({ isActive }) =>

@@ -2,7 +2,11 @@
 @import '../../../scss/mixins';
 .search-form {
   position: relative;
+  // width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
   @include tablet {
+    margin: 0;
     // margin-right: 24px;
   }
   @include desktop {
@@ -15,14 +19,20 @@
     background-color: transparent;
     border: 1px $colorBlack solid;
     border-radius: 20px;
-    padding: 5px;
-    padding-left: 40px;
+
+    width: 100%;
+    padding-left: 48px;
+
     &:focus-visible {
       outline: none;
     }
     @include tablet {
+      padding: 5px;
+      padding-left: 40px;
+      max-width: 213px;
     }
     @include desktop {
+      max-width: 288px;
     }
   }
 

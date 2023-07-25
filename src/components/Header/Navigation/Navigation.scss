@@ -1,0 +1,99 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 248px;
+  @include tablet {
+    margin-bottom: 0;
+
+    flex-direction: row;
+
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  &__link {
+    padding: 16px;
+    position: relative;
+    transition: $transition-dur-and-func;
+    font-size: 20px;
+    font-weight: 500;
+
+    @include tablet {
+      padding: 0;
+
+      font-weight: bold;
+    }
+
+    @include desktop {
+      padding: 0;
+
+      font-size: 18px;
+    }
+    &::after {
+      @include tablet {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0px;
+
+        border-radius: 2px;
+        background-color: $colorBlue;
+        transition: $transition-dur-and-func;
+      }
+    }
+    &:hover,
+    &:focus {
+      @include tablet {
+        color: $colorBlue;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+
+      @include tablet {
+        margin-bottom: 0;
+
+        margin-right: 44px;
+      }
+      @include desktop {
+        margin-right: 69px;
+      }
+    }
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 14px;
+
+  @include tablet {
+    font-size: 32px;
+    margin-right: 48px;
+  }
+  @include desktop {
+    font-size: 42px;
+    margin-right: 120px;
+  }
+}
+.link-active {
+  text-decoration: none;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  @include tablet {
+    background-color: transparent;
+
+    color: $colorBlue;
+  }
+}
+.link-active::after,
+.navigation__link:hover::after {
+  width: 120%;
+}

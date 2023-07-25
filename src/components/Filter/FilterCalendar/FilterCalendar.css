@@ -1,0 +1,16 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.calendar-wraper {
+  position: relative;
+}
+
+.calendar {
+  max-width: 250px;
+  position: absolute;
+  right: 0;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1725490196);
+}/*# sourceMappingURL=FilterCalendar.css.map */

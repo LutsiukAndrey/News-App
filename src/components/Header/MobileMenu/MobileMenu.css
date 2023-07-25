@@ -1,0 +1,37 @@
+/*
+  This mixin can be used to set the font-size and line-height in percents:
+  @include font-size(fontSize, lineHeight);
+*/
+.mobile-menu {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  background-color: #f8f8f8;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile-menu__header {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    visibility: hidden;
+  }
+}
+
+.close-menu {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.them-swithcer-wrapper {
+  padding: 16px 24px;
+}/*# sourceMappingURL=MobileMenu.css.map */

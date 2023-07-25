@@ -5,4 +5,19 @@
 .home-page {
   padding-top: 28px;
   padding-bottom: 150px;
+}
+.home-page__wraper {
+  gap: 28px;
+}
+@media screen and (min-width: 768px) {
+  .home-page__wraper {
+    gap: 29px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .home-page__wraper {
+    gap: 31px;
+  }
 }/*# sourceMappingURL=Home.css.map */

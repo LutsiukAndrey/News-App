@@ -1,4 +1,19 @@
 /*
   This mixin can be used to set the font-size and line-height in percents:
   @include font-size(fontSize, lineHeight);
-*//*# sourceMappingURL=Filter.css.map */
+*/
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .filter {
+    margin-bottom: 60px;
+  }
+}/*# sourceMappingURL=Filter.css.map */

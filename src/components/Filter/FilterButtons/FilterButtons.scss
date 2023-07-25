@@ -1,0 +1,58 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.filter-buttons {
+  display: flex;
+  max-width: 100%;
+}
+
+.grop {
+  &__btn {
+    padding: 7px 24px;
+    border: 2px solid $colorBlue;
+    color: $colorBlue;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: $transition-dur-and-func;
+    position: relative;
+    // &:not(:last-child) {
+    margin-right: 15px;
+    // }
+    &:hover {
+      background-color: $colorBlue;
+      color: $colorWhite;
+    }
+    &-active {
+      background-color: $colorBlue;
+      color: $colorWhite;
+    }
+    &.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+      border-radius: 20px;
+      margin-right: 0;
+      padding: 3px 20px;
+      border: 2px solid $colorBlue;
+      color: $colorBlue;
+      &:hover {
+        background-color: $colorBlue;
+        color: $colorWhite;
+      }
+    }
+  }
+}
+.collapse {
+  // background-color: #f0f;
+  max-width: 100%;
+  box-shadow: $boxShadow;
+
+  padding: 14px 24px;
+  position: absolute;
+
+  background-color: $mainBgColor;
+  border-radius: 20px;
+  &__list {
+    color: $colorBlue;
+    &-item {
+      margin-bottom: 8px;
+    }
+  }
+}

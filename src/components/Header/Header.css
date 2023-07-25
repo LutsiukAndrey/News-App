@@ -15,4 +15,11 @@
     padding-top: 28px;
     padding-bottom: 28px;
   }
+}
+
+.buurger-btn {
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 0;
 }/*# sourceMappingURL=Header.css.map */

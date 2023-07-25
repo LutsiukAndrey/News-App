@@ -1,0 +1,18 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.calendar-wraper {
+  position: relative;
+}
+.calendar {
+  max-width: 250px;
+
+  position: absolute;
+  right: 0;
+  background-color: $mainBgColor;
+  border-radius: 20px;
+  box-shadow: $boxShadow;
+}
+// .calendar-open-btn {
+//   width: 400px;
+// }
