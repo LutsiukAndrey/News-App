@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  @include minMobile {
+    flex-direction: column;
+  }
   @include tablet {
     margin-bottom: 48px;
   }

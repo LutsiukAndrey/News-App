@@ -1,4 +1,6 @@
 $breakpoint-mobile: 320px;
+$breakpoint-min-mobile: 300px;
+$breakpoint-mobile: 320px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1280px;
 
@@ -8,7 +10,7 @@ html.light {
   --colorGrey: #a8a8a8;
   --colorWhite: #fff;
   --mainBgColor: #f8f8f8;
-  // html[data-theme='light'] {
+  --hoverBtnColor: #111321;
   --colorBlue: #4440f6;
 }
 html.dark {
@@ -17,7 +19,7 @@ html.dark {
   --colorGrey: #a8a8a8;
   --colorWhite: #110c25;
   --mainBgColor: #2e2e2e;
-  // html[data-theme='light'] {
+  --hoverBtnColor: #fff;
   --colorBlue: #4440f6;
 }
 // :root {

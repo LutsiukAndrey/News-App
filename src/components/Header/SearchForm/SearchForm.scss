@@ -15,6 +15,7 @@
 
   &__input {
     // border: transparent;
+    color: var(--colorBlack);
 
     background-color: transparent;
     border: 1px var(--colorBlack) solid;
@@ -47,10 +48,7 @@
     border: none;
     box-sizing: border-box;
     &-icon {
-    }
-    @include tablet {
-    }
-    @include desktop {
+      color: var(--colorBlack);
     }
   }
 }

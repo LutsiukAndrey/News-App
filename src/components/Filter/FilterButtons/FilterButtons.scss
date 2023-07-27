@@ -11,7 +11,7 @@
     padding: 7px 24px;
     border: 2px solid var(--colorBlue);
     color: var(--colorBlue);
-    background-color: transparent;
+    background-color: #f3f3f3;
     border-radius: 20px;
     transition: $transition-dur-and-func;
     position: relative;
@@ -20,27 +20,30 @@
     // }
     &:hover {
       background-color: var(--colorBlue);
-      color: var(--colorWhite);
+      color: #fff;
     }
     &-active {
       background-color: var(--colorBlue);
-      color: var(--colorWhite);
+      color: #fff;
     }
     &.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+      width: 100%;
+
       border-radius: 20px;
-      margin-right: 0;
       padding: 3px 20px;
+      background-color: #f3f3f3;
+
       border: 2px solid var(--colorBlue);
       color: var(--colorBlue);
       &:hover {
         background-color: var(--colorBlue);
-        color: var(--colorWhite);
+        color: #fff;
       }
     }
   }
 }
 .collapse {
-  // background-color: #f0f;
+  background-color: #f3f3f3;
   max-width: 100%;
   box-shadow: $boxShadow;
 
@@ -48,7 +51,6 @@
   position: absolute;
   z-index: 3;
 
-  background-color: var(--mainBgColor);
   border-radius: 20px;
   &__list {
     color: var(--colorBlue);

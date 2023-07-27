@@ -33,6 +33,7 @@ export default function FilterCalendar() {
       <Collapse in={open} timeout="auto" unmountOnExit className="">
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DateCalendar
+            sx={{ color: '#000', p: 2 }}
             value={value}
             onChange={newValue => setValue(newValue)}
             className="calendar"

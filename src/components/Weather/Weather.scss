@@ -4,7 +4,7 @@
   box-shadow: 2px 2px 20px 2px #00000070;
 
   margin-bottom: 20px;
-  color: var(--colorWhite);
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +58,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: var(--colorWhite);
+      background-color: #fff;
       //   border: 1px solid #000;
       left: -8px;
       bottom: 0;

@@ -20,6 +20,11 @@
 //   margin-bottom: 0;
 // }
 
+@mixin minMobile {
+  @media screen and (max-width: $breakpoint-min-mobile) {
+    @content;
+  }
+}
 @mixin mobile {
   @media screen and (min-width: $breakpoint-mobile) {
     @content;
