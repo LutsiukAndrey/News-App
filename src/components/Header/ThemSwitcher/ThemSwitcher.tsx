@@ -24,7 +24,7 @@ const ThemSwitcher = () => {
     }
 
     document.documentElement.setAttribute('class', 'light');
-  }, [darkMode]);
+  });
 
   const Switcher = styled((props: SwitchProps) => (
     <Switch
