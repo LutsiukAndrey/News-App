@@ -1,18 +1,21 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
 .weather-wraper {
-  color: $colorWhite;
+  box-shadow: 2px 2px 20px 2px #00000070;
+
+  margin-bottom: 20px;
+  color: var(--colorWhite);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 130px;
   width: 100%;
-  background-color: $colorBlue;
+  background-color: var(--colorBlue);
   border-radius: 4px;
-  //   text-align: center;
 
   @include tablet {
+    margin-bottom: 0;
     width: 353px;
   }
   @include desktop {
@@ -55,7 +58,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: $colorWhite;
+      background-color: var(--colorWhite);
       //   border: 1px solid #000;
       left: -8px;
       bottom: 0;

@@ -3,13 +3,15 @@
 
 .calendar-wraper {
   position: relative;
+  // z-index: 3;
 }
 .calendar {
   max-width: 250px;
+  z-index: 3;
 
   position: absolute;
   right: 0;
-  background-color: $mainBgColor;
+  background-color: var (--mainBgColor);
   border-radius: 20px;
   box-shadow: $boxShadow;
 }

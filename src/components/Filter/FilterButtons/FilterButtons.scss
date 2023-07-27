@@ -9,8 +9,8 @@
 .grop {
   &__btn {
     padding: 7px 24px;
-    border: 2px solid $colorBlue;
-    color: $colorBlue;
+    border: 2px solid var(--colorBlue);
+    color: var(--colorBlue);
     background-color: transparent;
     border-radius: 20px;
     transition: $transition-dur-and-func;
@@ -19,22 +19,22 @@
     margin-right: 15px;
     // }
     &:hover {
-      background-color: $colorBlue;
-      color: $colorWhite;
+      background-color: var(--colorBlue);
+      color: var(--colorWhite);
     }
     &-active {
-      background-color: $colorBlue;
-      color: $colorWhite;
+      background-color: var(--colorBlue);
+      color: var(--colorWhite);
     }
     &.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
       border-radius: 20px;
       margin-right: 0;
       padding: 3px 20px;
-      border: 2px solid $colorBlue;
-      color: $colorBlue;
+      border: 2px solid var(--colorBlue);
+      color: var(--colorBlue);
       &:hover {
-        background-color: $colorBlue;
-        color: $colorWhite;
+        background-color: var(--colorBlue);
+        color: var(--colorWhite);
       }
     }
   }
@@ -46,11 +46,12 @@
 
   padding: 14px 24px;
   position: absolute;
+  z-index: 3;
 
-  background-color: $mainBgColor;
+  background-color: var(--mainBgColor);
   border-radius: 20px;
   &__list {
-    color: $colorBlue;
+    color: var(--colorBlue);
     &-item {
       margin-bottom: 8px;
     }

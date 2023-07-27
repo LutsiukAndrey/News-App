@@ -3,8 +3,14 @@
 
 .news-card {
   width: 100%;
+  box-shadow: 2px 2px 20px 2px #00000070;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   @include tablet {
+    margin-bottom: 0;
     width: 353px;
   }
   @include desktop {
@@ -18,22 +24,24 @@
     margin-bottom: 20px;
     &__text {
       background-color: #4340f663;
-      color: $colorWhite;
+      color: #fff;
       padding: 4px 8px;
       border-radius: 0 4px 4px 0;
       position: absolute;
       top: 40px;
+      z-index: 2;
     }
     &__image {
       border-radius: 4px;
     }
     &__favorite-button {
       position: absolute;
+      z-index: 2;
       bottom: 12px;
       right: 12px;
       display: flex;
       padding: 6px 12px;
-      background-color: $mainBgColor;
+      background-color: #fff;
       border: none;
       border-radius: 20px;
       transition: $transition-dur-and-func;
@@ -50,12 +58,9 @@
 
   // .news-card__title
   &__description-wraper {
-    @include tablet {
-      max-width: 351px;
-    }
-    @include desktop {
-      width: 353px;
-    }
+    padding-left: 8px;
+    padding-right: 14px;
+
     &__title {
       margin-bottom: 20px;
       font-size: 24px;
@@ -89,6 +94,8 @@
   // .news-card__details
 
   &__details {
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
     justify-content: space-between;
   }
@@ -104,7 +111,7 @@
   &__read-more-button {
     border: none;
     background-color: transparent;
-    color: $colorBlue;
+    color: var(--colorBlue);
     font-size: 16px;
     transition: $transition-dur-and-func; /* Add transition for smooth animation */
 

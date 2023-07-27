@@ -4,6 +4,9 @@ import { Home } from './pages/Home';
 import Favorite from './pages/Favorite';
 import Read from './pages/Read';
 import NotFoundPage from './pages/NotFoundPage';
+// import './styles/theme.css';
+
+// import { useEffect, useState } from 'react';
 
 enum PAGES {
   MAIN = 'main',

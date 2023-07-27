@@ -4,17 +4,35 @@ import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { useState } from 'react';
+import { toggleDarkMode } from '../../../redux/theme/themeSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectDarkMode } from '../../../redux/theme/themeSelector';
+import { useEffect } from 'react';
 
 const ThemSwitcher = () => {
-  const [switcherCheked, setSwitcherCheked] = useState(false);
+  const darkMode = useSelector(selectDarkMode);
+  const dispatch = useDispatch();
+
+  const handleThemeToggle = () => {
+    dispatch(toggleDarkMode());
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.setAttribute('class', 'dark');
+      return;
+    }
+
+    document.documentElement.setAttribute('class', 'light');
+  }, [darkMode]);
 
   const Switcher = styled((props: SwitchProps) => (
     <Switch
       focusVisibleClassName=".Mui-focusVisible"
-      //   disableRipple
-      onChange={() => setSwitcherCheked(!switcherCheked)}
-      checked={switcherCheked}
+      onChange={() => {
+        handleThemeToggle();
+      }}
+      checked={darkMode}
       {...props}
     />
   ))(({ theme }) => ({
@@ -60,12 +78,12 @@ const ThemSwitcher = () => {
     <div className="switcher">
       <LightModeIcon
         className="switcher__icon light"
-        sx={{ color: !switcherCheked ? '#4440f6' : '#a8a8a8' }}
+        sx={{ color: !darkMode ? '#4440f6' : '#a8a8a8' }}
       />
       <Switcher sx={{ m: 1 }} />
       <DarkModeIcon
         className="switcher__icon dark"
-        sx={{ color: switcherCheked ? '#4440f6' : '#a8a8a8' }}
+        sx={{ color: darkMode ? '#4440f6' : '#a8a8a8' }}
       />
     </div>
   );

@@ -4,9 +4,10 @@
 .home-page {
   padding-top: 28px;
   padding-bottom: 150px;
+  &__right {
+    margin-left: auto;
+  }
   &__wraper {
-    gap: 28px;
-
     @include tablet {
       gap: 29px;
       display: flex;

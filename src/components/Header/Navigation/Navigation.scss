@@ -43,14 +43,14 @@
         width: 0px;
 
         border-radius: 2px;
-        background-color: $colorBlue;
+        background-color: var(--colorBlue);
         transition: $transition-dur-and-func;
       }
     }
     &:hover,
     &:focus {
       @include tablet {
-        color: $colorBlue;
+        color: var(--colorBlue);
       }
     }
 
@@ -85,12 +85,12 @@
 }
 .link-active {
   text-decoration: none;
-  background-color: $colorBlue;
-  color: $colorWhite;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
   @include tablet {
     background-color: transparent;
 
-    color: $colorBlue;
+    color: var(--colorBlue);
   }
 }
 .link-active::after,

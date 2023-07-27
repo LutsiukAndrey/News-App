@@ -4,7 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Weather = () => {
   return (
-    <div className="weather-wraper ">
+    <li className="weather-wraper ">
       <div className="weather__temperature">
         <span className="weather__temperature-value">23&deg;</span>
         <div className="weather-details">
@@ -19,7 +19,7 @@ const Weather = () => {
         <p className="date__day-of-week">Mon</p>
         <p className="date__value">20 Jan 2021</p>
       </div>
-    </div>
+    </li>
   );
 };
 

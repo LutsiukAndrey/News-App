@@ -31,6 +31,7 @@ body {
   color: #111321;
   font-family: "Monrope", sans-serif;
   font-weight: 400;
+  background-color: var(--pageaaaColor);
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -122,4 +123,4 @@ button {
   .container {
     max-width: 1280px;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */zzz

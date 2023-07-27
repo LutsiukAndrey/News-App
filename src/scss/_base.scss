@@ -24,11 +24,11 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  color: $colorBlack;
+  color: var(--colorBlack);
   font-family: 'Monrope', sans-serif;
 
   font-weight: 400;
-  // background-color: $pageColor;
+  background-color: var(--mainBgColor);
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -72,7 +72,7 @@ a:not([class]) {
 }
 a {
   text-decoration: none;
-  color: $colorBlack;
+  color: var(--colorBlack);
 }
 
 img {

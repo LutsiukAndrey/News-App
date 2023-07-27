@@ -11,8 +11,8 @@ export const Home = () => {
       <Filter />
       <ul className="home-page__wraper">
         <Weather />
-        {arr.map(() => (
-          <NewsCard />
+        {arr.map(e => (
+          <NewsCard key={e} />
         ))}
       </ul>
     </section>
