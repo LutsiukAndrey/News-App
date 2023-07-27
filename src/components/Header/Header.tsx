@@ -11,13 +11,8 @@ import { useState } from 'react';
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const mediaQuery = {
-    desktop: useMediaQuery('(min-width:1280px)'),
-    tablet: useMediaQuery('(min-width:768px)'),
-    mobile: useMediaQuery('(max-width:320px)'),
-  };
 
-  const { desktop, tablet, mobile } = mediaQuery;
+  const tablet = useMediaQuery('(min-width:768px)');
 
   return (
     <header className="header">

@@ -1,5 +1,5 @@
 import './NewsCard.scss';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import aaa from '../../img/aaaa.jpg';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';

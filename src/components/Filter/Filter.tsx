@@ -1,6 +1,5 @@
 import './Filter.scss';
 
-import { useState } from 'react';
 import FilterButtons from './FilterButtons/FilterButtons';
 import FilterCalendar from './FilterCalendar/FilterCalendar';
 

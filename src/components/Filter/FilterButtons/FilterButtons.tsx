@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useState } from 'react';
 import './FilterButtons.scss';
 
 import List from '@mui/material/List';
