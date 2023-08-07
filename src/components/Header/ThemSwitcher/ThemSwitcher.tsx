@@ -16,7 +16,7 @@ const ThemSwitcher = () => {
   const handleThemeToggle = () => {
     dispatch(toggleDarkMode());
   };
-
+  console.log(darkMode);
   useEffect(() => {
     if (darkMode) {
       document.documentElement.setAttribute('class', 'dark');
